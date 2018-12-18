@@ -24,8 +24,7 @@ class Drawer extends Component {
     super(props)
     this.getFocused = false
 
-    this.makeBlur = this.makeBlur.bind(this)
-    this.makeFocus = this.makeFocus.bind(this)
+    this.changeFocus = this.changeFocus.bind(this)
 
     this.handleArrowKey = this.handleArrowKey.bind(this)
   }
@@ -38,18 +37,12 @@ class Drawer extends Component {
     return items && typeof items[0] === 'string' ? 'p' : null
   }
 
-  makeFocus() {
-    this.getFocused = true
-  }
-
-  makeBlur() {
-    this.getFocused = false
+  changeFocus() {
+    this.getFocused = !this.getFocused
   }
 
   handleArrowKey(event) {
     const { leftIconHandler, rightIconHandler } = this.props
-    console.log('this.getFocused', this.getFocused)
-    console.log({ event })
     if (!this.getFocused) return
     if (isKey(37)(event)) leftIconHandler()
     if (isKey(39)(event)) rightIconHandler()
@@ -70,12 +63,10 @@ class Drawer extends Component {
 
     return (
       <div
-        zindex={0}
+        tabIndex="0"
         className="c--drawer__wrapper"
-        onClick={this.getFocused ? this.makeBlur : this.makeFocus}
-        onFocus={this.makeFocus}
-        onBlur={this.makeBlur}
         onKeyDown={this.handleArrowKey}
+        onClick={this.changeFocus}
       >
         <Icon
           alt="left arrow icon"

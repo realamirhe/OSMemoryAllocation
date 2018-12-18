@@ -15,6 +15,7 @@ const Iter = ({
     {items &&
       items.map((itemChildren, index) => (
         <ItemComponent
+
           key={index}
           className={concatenate([
             classes.root,
