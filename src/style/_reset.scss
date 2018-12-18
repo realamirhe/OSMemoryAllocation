@@ -1,0 +1,76 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,big,cite,code,del,em,img,ins,q,s,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,dialog,figure,footer,header,nav,section{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+html{height:100%;margin-bottom:1px;} /* always show scroll bar */
+
+/*  =GLOBAL ELEMENTS
+--------------------------------------------------------------
+    Vertical Rhythm: 18px vertical grid
+*/
+body {
+    color:#222;
+    font-family:"Helvetica Neue",Helvetica,Arial,"Liberation Sans","FreeSans",sans-serif;
+    font-size:13px;
+}
+
+p, ul, ol, dl, blockquote, pre, dialog{
+    font-size:1em; /* 13px */
+    line-height:1.3846em; /* 18px */
+    // margin:0 0 1.3846em 0;
+}
+h1{
+    font-size:2.4615em; /* 32px */
+    line-height:1.125em; /* 36px */
+    margin-top:0.5625em;
+    margin-bottom:0em;
+}
+h2{
+    font-size:1.5385em; /* 20px */
+    font-weight:normal;
+    line-height:1.8em; /* 36px */
+    margin-top:0.9em;
+    margin-bottom:0em;
+}
+h3{
+    font-size: 1.2308em; /* 16px */
+    line-height: 1.125em; /* 18px */
+    margin-top: 1.125em;
+    margin-bottom: 0em;
+}
+h4{
+    font-size:1.0769em; /* 14px */
+    line-height:1.2857em; /* 18px */
+    margin-top:1.2857em;
+    margin-bottom:0em;
+}
+h5{
+    font-size:1em; /* 13px */
+    line-height:1.3846em; /* 18px */
+    margin:0;
+}
+h6{
+    font-size:1em; /* 13px */
+    font-weight:normal;
+    font-variant:small-caps;
+    letter-spacing:2px;
+    line-height:1.3846em; /* 18px */
+}
+blockquote{border-left:3px solid rgba(221,221,221,.5);font-style:italic;padding-left:17px;}/* #DDD at .5 strength*/
+pre,code{font-family:monaco,"Courier New",Courier,monospace;font-size:1em;}
+sup,sub{font-size:0.7em;line-height:1em;vertical-align:baseline;}
+sup{position:relative;top:-0.4em;}
+sub{position:relative;top:0.4em;}
+
+ol, ul, dd{margin-left:1.5em;}
+ul{list-style:disc;}
+li ul, li ol{margin-bottom:0}
+ol{list-style:decimal;}
+dt{font-weight:bold;}
+
+a:link, a:visited{color:#395a8d;text-decoration:none;}
+a:hover, a:focus, a:active{color:#2f2f65;text-decoration:underline;}
+
+hr{
+    margin:1.3846em 0 1.308em 0;
+    height:0;
+    border:1px solid #888;
+    border-width:1px 0 0 0;
+}
